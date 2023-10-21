@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Css Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- End Css Style -->
+
+    <!-- Bootstrap Css Style -->
+    <!-- <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" /> -->
+    <!-- End Bootstrap Css Style -->
+
+    <!-- AOS Css Style -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- End AOS Css Style -->
+
+    <!-- Boxicons Css Style -->
+    <link rel="stylesheet" href="assets/libs/boxicons/css/boxicons.min.css" />
+    <!-- End Boxicons Css Style -->
+    <title>Chou Stun | ZLabr</title>
+  </head>
+  <body>
+    <!-- Video Background -->
+    <video class="bg-video" autoplay muted loop>
+      <source src="assets/video/background-chou.mp4" type="video/mp4" />
+    </video>
+    <!-- End Video
+    Background -->
+
+    <!-- Navbar -->
+    <header id="navbar">
+      <nav class="navbar-wrapper">
+        <h2 class="navbar-title">ZLABR</h2>
+        <div class="navbar-box">
+          <ul class="navbar-label">
+            <li class="navbar-link">
+              <a href="#" class="navbar-text">Home</a>
+            </li>
+            <li class="navbar-link">
+              <a href="#" class="navbar-text">About</a>
+            </li>
+            <li class="navbar-link">
+              <a href="#" class="navbar-text">Contact</a>
+            </li>
+            <li class="navbar-link">
+              <div class="btn">
+                <i class="bx bx-cloud-download"></i>
+                <a href="#">Download</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- Started -->
+    <section id="started">
+      <div class="container">
+        <div data-aos="fade-up" data-aos-duration="3000" class="box-images">
+          <img src="assets/images/chou.png" alt="Chou" />
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000" class="start-title">
+          <h3>CHOU <span>STUN</span></h3>
+        </div>
+        <div class="start-subtitle">
+          <p class="text-subtitle"></p>
+        </div>
+        <div class="input-submit">
+          <input onclick="typeWriter()" type="submit" value="GET SKIN" />
+        </div>
+      </div>
+    </section>
+    <!-- End Started -->
+
+    <!-- JavaScript -->
+    <!-- JavaScript Default -->
+    <!-- End JavaScript Default -->
+
+    <!-- JavaScript Bootstrap -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- End JavaScript Bootstrap -->
+
+    <!-- JavaScript AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- End JavaScript AOS -->
+
+    <!-- JavaScript GSAP -->
+    <script src="assets/libs/gsap-public/minified/gsap.min.js"></script>
+    <script src="assets/libs/gsap-public/minified/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(TextPlugin);
+
+      gsap.to(".text-subtitle", {
+        text: "exercitation sunt aliqua aute id cillum ad pariatur est sunt proident culpa officia sit Lorem do laboris cillum anim quis labore ut excepteur minim cupidatat elit culpa ex fugiat commodo",
+        delay: 1,
+        duration: 4,
+        repeat: -1,
+        yoyo: true,
+      });
+    </script>
+    <!-- End JavaScript GSAP -->
+
+    <!-- Particle Effect By Nathan -->
+    <script
+      type="text/javascript"
+      src="https://cdn.prinsh.com/NathanPrinsley-effect/efek-salju.js"
+    ></script>
+    <!-- End Particle Effect -->
+  </body>
+</html>

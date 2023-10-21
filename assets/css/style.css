@@ -1,0 +1,172 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+}
+
+.bg-video {
+  z-index: -100;
+  position: fixed;
+  background-attachment: fixed;
+  opacity: 50%;
+}
+
+.navbar-wrapper {
+  margin-top: -15px;
+  background: transparent;
+  padding: 0.5rem 3rem;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.navbar-wrapper .navbar-title {
+  color: white;
+  font-size: 2rem;
+  font-family: "Consolas";
+  letter-spacing: 4px;
+}
+
+.navbar-wrapper .navbar-box {
+  margin-left: 420px;
+  margin-top: 15px;
+}
+
+.navbar-wrapper .navbar-box .navbar-label .navbar-link {
+  display: inline-block;
+  padding: 0 35px;
+}
+.navbar-wrapper .navbar-box .navbar-label .navbar-link .navbar-text {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  transition: color 0.8s ease;
+}
+
+.navbar-wrapper .navbar-box .navbar-label .navbar-link .navbar-text:hover {
+  color: #ff694e;
+}
+
+.navbar-wrapper .navbar-box .navbar-link .btn {
+  width: 120px;
+  height: 20px;
+  background: #e52300;
+  padding: 10px 15px;
+  margin-left: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.9s ease;
+  cursor: pointer;
+}
+
+.navbar-wrapper .navbar-box .navbar-link .btn i {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bolder;
+  margin-right: 7px;
+}
+
+.navbar-wrapper .navbar-box .navbar-link .btn:hover {
+  background-color: transparent;
+  border: 2px solid #e52300;
+}
+
+.navbar-wrapper .navbar-box .navbar-link .btn a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/** Start.er **/
+
+#started .container {
+  padding: 4rem 2rem;
+  margin-left: 100px;
+}
+
+#started .container .box-images {
+  z-index: -1;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  padding-left: 480px;
+  margin-top: 100px;
+  -webkit-animation: glide 1s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes glide {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+
+  to {
+    left: 0px;
+    top: 20px;
+  }
+}
+
+#started .container .box-images img {
+  width: 900px;
+  height: 750px;
+}
+
+#started .container .start-title h3 {
+  color: white;
+  font-weight: bolder;
+  font-size: 5rem;
+}
+
+#started .container .start-title h3 span {
+  color: #e52300;
+  letter-spacing: 16px;
+}
+
+#started .container .start-subtitle p {
+  color: #f4f4f4eb;
+  font-size: 1.8rem;
+  padding-right: 615px;
+  text-align: justify;
+  margin-top: -70px;
+  text-indent: 4rem;
+  opacity: 80%;
+  position: absolute;
+  z-index: -1;
+}
+
+#started .container .input-submit {
+}
+
+#started .container .input-submit input {
+  padding: 1rem 7.2rem;
+  font-size: 1.8rem;
+  background-color: transparent;
+  border: 3px solid white;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 16px;
+  font-family: "Monospace";
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 3px 4px 2px white;
+  transition: 0.9s ease;
+  cursor: pointer;
+  margin-top: 160px;
+}
+
+#started .container .input-submit input:hover {
+  border: 3px solid #e33200eb;
+  box-shadow: 3px 4px 2px #e33200eb;
+}
